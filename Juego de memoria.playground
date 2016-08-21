@@ -1,0 +1,21 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var rango = 0...100
+
+for numero in rango{
+    
+    switch numero {
+    case 30...40:
+        print("El \(numero) Viva Swift!!!")
+    case  let x where x / 5 == 0:
+        print("El \(numero) Bingo!!!")
+    case let x where numero % 2 == 0:
+        print("El \(numero) par!!!")
+    case let x where numero % 2 != 0:
+        print("El \(numero) impar!!!")
+    default:
+        break
+    }
+}
